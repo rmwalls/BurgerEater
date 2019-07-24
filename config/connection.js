@@ -20,8 +20,8 @@ function readburgers() {
     if (err) throw err;
 
     // Log all results of the SELECT statement
-    console.log(res);
-    connection.end();
+    console.log("in connection.js, line 23" + res);
+    //connection.end();
   });
 }
-module.exports=connection.js;
+module.exports=connection;
