@@ -8,8 +8,8 @@ var burger = {
       cb(res);
     })
   }, 
-  insertBurger:  function(name,cb){
-    orm.insertOne("burgers","burger_name",name,function(res){
+  create:  function(burger_name, cb){
+    orm.insertOne("burger_name", burger_name, function(res){
       cb(res);
     })
   }, 
@@ -19,7 +19,7 @@ var burger = {
       cb(res);
      })
   },
-  digestBurger: function(id, cb){
+  yuckyBurger: function(id, cb){
     orm.deleteOne("burgers","id",id,function(res){
       cb(res);
     })

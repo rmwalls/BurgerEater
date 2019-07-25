@@ -1,21 +1,21 @@
-// var $burgerName = $("#name-txt");
 
-// $("#submit-btn").on("click",function(e){
+var $burgerName = $("#burger");
+
+$("#submit-btn").on("click",function(e){
    
-//     e.preventDefault();
+    e.preventDefault();
 
-//     if($burgerName.val() !== ""){
+    if($burgerName.val() !== ""){
 
-//         var newBurger = {burger_name: $burgerName.val()}
+        var newBurger = {burger_name: $burgerName.val()}
 
-//         $.post("/api/burgers",{data: newBurger}).then(function(){
-//             console.log("created new burger");
-//             // Reload the page to get the updated list
-//             location.reload();
-//         })
-
-//     }
-// })
+        $.post("/api/burgers",{data: newBurger}).then(function(){
+            console.log("created new burger");
+            // Reload the page to get the updated list
+            location.reload();
+        })
+    }
+})
 
 $(".create-form").on("submit", function(event) {
     // Make sure to preventDefault on a submit event.

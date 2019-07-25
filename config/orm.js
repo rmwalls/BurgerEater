@@ -5,14 +5,14 @@ const connection = require("./connection");
 var orm = {
   showAll: function (table, cb) {
     var queryString = "SELECT * FROM ??";
-    connection.query(queryString, [table], function (err, result) {
+    connection.query(queryString, table, function (err, result) {
       if (err) throw err;
       cb(result);
     });
   },
-  insertOne: function (table, col, value, cb) {
-    var queryString = "INSERT INTO ?? (??,dt_stamp) VALUES(?,NOW());";
-    connection.query(queryString, [table, col, value], function (err, result) {
+  insertOne: function (col, value, cb) {
+    var queryString = "INSERT INTO burgers (??) VALUES(?);";
+    connection.query(queryString, [col, value], function (err, result) {
       if (err) throw err;
       cb(result);
     });
