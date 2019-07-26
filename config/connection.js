@@ -20,7 +20,7 @@ function readburgers() {
     if (err) throw err;
 
     // Log all results of the SELECT statement
-    console.log("in connection.js, line 23" + res);
+    //console.log("in connection.js, line 23" + res);
     //connection.end();
   });
 }

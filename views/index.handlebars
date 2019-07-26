@@ -15,7 +15,7 @@
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-      <li><button class="js_deleteBurger" data-id="{{this.id}}">YUCK! </button> {{this.id}} {{this.burger_name}}</li>
+      <li><button class="delete-burger" data-id="{{this.id}}">YUCK! </button> {{this.id}} {{this.burger_name}}</li>
     {{/if}}
   {{/each}}
 </ul>
@@ -25,13 +25,9 @@
 
   <div class="form-group">
     <label for="burger_name">Burger Type:</label> 
-    <input type="text" id="burger" name="name">
+    <input type="text" id="burger" name="name"> <button type="submit">Cook the Burger</button>
   </div>
   <!--default for devoured boolean is false -->
-
-  <button type="submit">Cook the Burger</button>
 </form>
-
-<!--need devour and yuck buttons-->
 
 <!--would love to make image change when burger clicked-->
