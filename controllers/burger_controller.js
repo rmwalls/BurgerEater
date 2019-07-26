@@ -35,7 +35,7 @@ router.put("/api/burgers/:id", function(req, res) {
   
 // delete a burger
 router.delete("/api/burgers/:id", function(req, res) {
-  var id = "id = " + req.params.id;
+  var id = req.params.id;
   burger.yuckyBurger(id, function(result) {
     res.json({result});
   });
