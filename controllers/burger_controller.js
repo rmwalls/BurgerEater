@@ -9,7 +9,7 @@ router.get("/", function(req, res) {
       var hbsObject = {
         burgers: data
       };
-      console.log("burger_controller, line 11" + hbsObject);
+      console.log("burger_controller, line 12" + hbsObject);
       res.render("index", hbsObject);
     });
   });
@@ -23,21 +23,12 @@ router.get("/", function(req, res) {
   });
   
   router.put("/api/burgers/:id", function(req, res) {
-    var condition = "id = " + req.params.id;
-  
-    console.log("condition" + condition);
-  
-    burger.update({
-      devoured: req.body.devoured
-    }, condition, function(result) {
-      if (result.changedRows == 0) {
-        // If no rows were changed, then the ID must not exist, so 404
-        return res.status(404).end();
-      } else {
-        res.status(200).end();
-      }
-    });
-  });
+    var id = req.params.id;
+    burger.devourBurger(id, req.body.devoured,function(result) {
+      //console.log(result)
+      res.json({ changed: result.changedRows })
+     });
+  }) ;
   
   router.delete("/api/burgers/:id", function(req, res) {
     var condition = "id = " + req.params.id;

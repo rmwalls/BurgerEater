@@ -62,7 +62,7 @@ DONEExport the connection.
 
 DONE Create an orm.js file inside config directory.
 
-*Import (require) connection.js into orm.js
+DONE*Import (require) connection.js into orm.js
 
 *In the orm.js file, create the methods that will execute the necessary MySQL commands in the controllers. 
 *These are the methods you will need to use in order to retrieve and store data in your database.
@@ -71,26 +71,26 @@ selectAll()
 insertOne()
 updateOne()
 
-*Export the ORM object in module.exports.
+DONE*Export the ORM object in module.exports.
 
 Model setup
 DONE Inside your burger directory, create a folder named models.
 
 DONE In models, make a burger.js file.
-*Inside burger.js, import orm.js into burger.js
+DONE*Inside burger.js, import orm.js into burger.js
 
-*Also inside burger.js, create the code that will call the ORM functions using burger specific input for the ORM.
-*Export at the end of the burger.js file.
+DONE*Also inside burger.js, create the code that will call the ORM functions using burger specific input for the ORM.
+DONE*Export at the end of the burger.js file.
 
 Controller setup
 DONE Inside your burger directory, create a folder named controllers.
 DONE In controllers, create the burgers_controller.js file.
-*Inside the burgers_controller.js file, import the following:
+DONEInside the burgers_controller.js file, import the following:
 
 Express
 burger.js
 
-*Create the router for the app, and export the router at the end of your file.
+DONECreate the router for the app, and export the router at the end of your file.
 
 View setup
 DONE Inside your burger directory, create a folder named views.
@@ -98,7 +98,7 @@ DONE Create the index.handlebars file inside views directory.
 DONE Create the layouts directory inside views directory.
 
 DONE Create the main.handlebars file inside layouts directory.
-Setup the main.handlebars file so it's able to be used by Handlebars.
+DONESetup the main.handlebars file so it's able to be used by Handlebars.
 Setup the index.handlebars to have the template that Handlebars can render onto.
 Create a button in index.handlebars that will submit the user input into the database.
 
