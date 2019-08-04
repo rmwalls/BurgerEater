@@ -13,7 +13,7 @@ The instructions for this homework were to create a burger logger with:
 
 We were also to use Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.
 
-** What in the world is a burger logger? **
+**What in the world is a burger logger?** <br>
 Essentially we are using the tools listed above to:
     - create and seed a MySQL database
     - create an ORM to interact with the database and
@@ -22,12 +22,14 @@ Essentially we are using the tools listed above to:
     - generate HTML pages using Handlebars
     - use ajax requests to interact with the web server
 
-* I focused on functionality and did not try to make a pretty page. I also added a delete burger function (called Yuck!). *
+*I focused on functionality and did not try to make a pretty page. I also added a delete burger function (called Yuck!).*
 
 The working APP was also deployed to Heroku and uses JAWSdb.
 
 ## MVC Directory and File Structure
 
+
+```
 .
 ├── config
 │   ├── connection.js
@@ -61,3 +63,4 @@ The working APP was also deployed to Heroku and uses JAWSdb.
     ├── index.handlebars
     └── layouts
         └── main.handlebars
+```
