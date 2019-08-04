@@ -15,6 +15,7 @@ We were also to use Node and MySQL to query and route data in the app, and Handl
 
 **What in the world is a burger logger?** <br>
 Essentially we are using the tools listed above to:
+
     - create and seed a MySQL database
     - create an ORM to interact with the database and
         - add a new item to the MySQL database
